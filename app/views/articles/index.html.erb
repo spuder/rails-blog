@@ -1,0 +1,11 @@
+<h1> You have arrived at spencers wonderful website </h1>
+<h2> You can do anything you can dream of here </h2>
+
+<% @articles.each do |article| %>
+
+	<p>
+	<%= link_to article.title, article %>
+	</p>
+	<hr/>
+<% end %>
+<p><%= link_to "Add article", new_article_path %></p>
